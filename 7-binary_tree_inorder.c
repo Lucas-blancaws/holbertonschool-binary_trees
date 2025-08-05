@@ -1,4 +1,5 @@
 #include "binary_trees.h"
+#include <stddef.h>
 /**
  * binary_tree_inorder - Parcourt un arbre binaire en parcours in-order
  * @tree: Pointeur vers la racine de l'arbre binaire à parcourir
@@ -14,11 +15,11 @@ void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
   }
   
   /* Parcourt récursivement le sous-arbre gauche */
-  binary_tree_inorder(tree->left);
+  binary_tree_inorder(tree->left, func);
 
   /* Applique la fonction au nœud actuel */
   func(tree->n);
 
   /* Parcourt récursivement le sous-arbre droit */
-  binary_tree_inorder(tree->right);
+  binary_tree_inorder(tree->right, func);
 }
