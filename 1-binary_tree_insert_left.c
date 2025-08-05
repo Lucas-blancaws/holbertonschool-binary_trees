@@ -1,11 +1,12 @@
 #include "binary_trees.h"
+#include <stdlib.h>
 /**
  * binary_tree_insert_left - Insère un nœud en tant qu'enfant gauche dans un arbre binaire
  * @parent: Pointeur vers le nœud parent où le nouveau nœud sera inséré
  * @value: Valeur à stocker dans le nouveau nœud
  * Return: Pointeur vers le nouveau nœud, ou NULL en cas d'échec ou si le parent est NULL
  */
-binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
+binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
   binary_tree_t *new_node;
   binary_tree_t *old_left;
