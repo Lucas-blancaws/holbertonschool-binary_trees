@@ -1,4 +1,5 @@
 #include "binary_trees.h"
+#include <stddef.h>
 /**
  * binary_tree_is_root - Vérifie si un nœud est la racine d'un arbre binaire
  * @node: Pointeur vers le nœud à vérifier
