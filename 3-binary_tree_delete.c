@@ -1,4 +1,5 @@
 #include "binary_trees.h"
+#include <stdlib.h>
 /**
  * binary_tree_delete - Supprime un arbre binaire entier
  * @tree: Pointeur vers la racine de l'arbre binaire à supprimer
