@@ -1,5 +1,5 @@
 #include "binary_trees.h"
-
+#include <stdlib.h>
 /**
  * binary_tree_node - crée un nœud pour un arbre binaire
  * @parent: pointeur vers le nœud parent du nouveau nœud
